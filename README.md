@@ -1,6 +1,6 @@
 # linux-cmds
-Install Docker
+Install Docker on Ubuntu
 --------------
 ~~~
-curl https://script.sh | sh
+https://raw.githubusercontent.com/harrytang/linux-cmds/master/install-docker-ubuntu.sh
 ~~~
