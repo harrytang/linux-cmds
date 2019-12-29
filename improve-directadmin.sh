@@ -14,6 +14,7 @@ service directadmin restart
 /usr/local/directadmin/custombuild/build update
 /usr/local/directadmin/custombuild/build phpmyadmin
 /usr/local/directadmin/directadmin set hide_brute_force_notifications 1
+service directadmin restart
 # Enable IP Blocking
 yum -y install iptables-services
 systemctl enable iptables
