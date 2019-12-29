@@ -36,3 +36,4 @@ touch /root/exempt_ips.txt
 cd /usr/local/directadmin/scripts/custom
 wget -O brute_force_notice_ip.sh http://files.directadmin.com/services/all/block_ips/2.2/brute_force_notice_ip.sh
 chmod 700 brute_force_notice_ip.sh
+service directadmin restart
