@@ -4,7 +4,7 @@
 /usr/local/directadmin/directadmin set force_hostname $(hostname -f)
 /usr/local/directadmin/directadmin set carootcert /usr/local/directadmin/conf/carootcert.pem
 /usr/local/directadmin/directadmin set letsencrypt_renewal_notice_to_admins 0
-/usr/local/directadmin/scripts/letsencrypt.sh $(hostname -f) 4096
+/usr/local/directadmin/scripts/letsencrypt.sh request $(hostname -f) 4096
 /usr/local/directadmin/directadmin set ssl 1
 /usr/local/directadmin/directadmin set hide_outlook 1
 /usr/local/directadmin/directadmin set dkim 1
