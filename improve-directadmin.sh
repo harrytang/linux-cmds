@@ -16,6 +16,7 @@ service directadmin restart
 /usr/local/directadmin/directadmin set hide_brute_force_notifications 1
 service directadmin restart
 sed -i 's#tcp://localhost#'ssl://localhost'#g' /var/www/html/roundcube/plugins/password/config.inc.php
+echo "real_ip_header CF-Connecting-IP;" >> /etc/nginx/nginx-includes.conf
 # Enable IP Blocking
 yum -y install iptables-services
 systemctl enable iptables
