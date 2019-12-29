@@ -15,6 +15,7 @@ service directadmin restart
 /usr/local/directadmin/custombuild/build phpmyadmin
 /usr/local/directadmin/directadmin set hide_brute_force_notifications 1
 service directadmin restart
+sed -i 's#tcp://localhost#'ssl://localhost'#g' /var/www/html/roundcube/plugins/password/config.inc.php
 # Enable IP Blocking
 yum -y install iptables-services
 systemctl enable iptables
