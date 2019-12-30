@@ -17,6 +17,8 @@ service directadmin restart
 service directadmin restart
 sed -i 's#tcp://localhost#'ssl://localhost'#g' /var/www/html/roundcube/plugins/password/config.inc.php
 echo "real_ip_header CF-Connecting-IP;" >> /etc/nginx/nginx-includes.conf
+curl https://raw.githubusercontent.com/harrytang/linux-cmds/master/directadmin-webapps-https.txt >> /etc/httpd/conf/extra/httpd-includes.conf
+/usr/local/directadmin/custombuild/build rewrite_confs
 # Enable IP Blocking
 yum -y install iptables-services
 systemctl enable iptables
