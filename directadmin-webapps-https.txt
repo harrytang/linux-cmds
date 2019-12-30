@@ -1,0 +1,18 @@
+################################################################################
+#                          HTTP to HTTPS Rewrite
+################################################################################
+<location /phpMyAdmin>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</location>
+<location /webmail>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</location>
+<location /roundcube>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</location>
