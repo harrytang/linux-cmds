@@ -9,4 +9,3 @@ sudo dnf install -y docker-ce --nobest
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo usermod -aG docker $USER
-newgrp docker 
