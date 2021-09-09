@@ -1,4 +1,11 @@
 # linux-cmds
+
+Install Docker on Oracle Linux 8
+--------------------------------
+~~~
+curl https://raw.githubusercontent.com/harrytang/linux-cmds/master/install-docker-oracle-linux-8.sh | sh
+~~~
+
 Install Docker on Ubuntu
 ------------------------
 ~~~
