@@ -4,3 +4,5 @@ sudo sed -i "s/\/\/Unattended-Upgrade::Automatic-Reboot \"false\";/Unattended-Up
 sudo snap install microk8s --classic --channel=1.22/stable
 sudo usermod -a -G microk8s ubuntu
 sudo chown -f -R ubuntu ~/.kube
+sudo apt remove iptables -y
+sudo apt install ufw -y
