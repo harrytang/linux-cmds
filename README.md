@@ -12,8 +12,8 @@ Install Microk8s on Ubuntu
 curl https://raw.githubusercontent.com/harrytang/linux-cmds/master/install-microk8s-ubuntu.sh | sh
 ~~~
 
-Install Docker on Ubuntu
-------------------------
+Install Docker on Ubuntu AMD64
+------------------------------
 ~~~
 curl https://raw.githubusercontent.com/harrytang/linux-cmds/master/install-docker-ubuntu-amd64.sh | sh
 ~~~
