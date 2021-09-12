@@ -15,7 +15,7 @@ curl https://raw.githubusercontent.com/harrytang/linux-cmds/master/install-micro
 Install Docker on Ubuntu
 ------------------------
 ~~~
-curl https://raw.githubusercontent.com/harrytang/linux-cmds/master/install-docker-ubuntu.sh | sh
+curl https://raw.githubusercontent.com/harrytang/linux-cmds/master/install-docker-ubuntu-amd64.sh | sh
 ~~~
 Improve performance and security for DirectAdmin
 ------------------------------------------------
